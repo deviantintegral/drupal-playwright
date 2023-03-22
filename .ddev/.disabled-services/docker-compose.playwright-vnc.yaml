@@ -1,0 +1,6 @@
+# Expose port 5900 for VNC client access like macOS Screen Sharing.
+version: '3.6'
+services:
+  web:
+    ports:
+      - "5900:5900"
