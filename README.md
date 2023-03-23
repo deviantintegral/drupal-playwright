@@ -14,6 +14,7 @@
 - [Implementation Highlights](#implementation-highlights)
   - [Example Tests](#example-tests)
   - [Docker build bind and cache mounts](#docker-build-bind-and-cache-mounts)
+- [Prior Art](#prior-art)
 - [Not Implemented Yet](#not-implemented-yet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
