@@ -55,7 +55,7 @@ yarn playwright codegen # To record new tests from scratch!
 
 ```console
 ddev install-playwright # This downloads all playwright dependencies into ddev.
-ddev playwright test
+ddev playwright test # See .ddev/commands/web for the playwright command.
 # Now, connect to the VNC server at https://drupal-playwright.ddev.site:7900/ with password `secret`.
 ddev playwright test --headed
 ddev playwright test --debug
