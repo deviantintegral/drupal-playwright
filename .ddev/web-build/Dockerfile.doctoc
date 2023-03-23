@@ -1,0 +1,2 @@
+# Install doctoc for the README.
+RUN npm install --global doctoc
