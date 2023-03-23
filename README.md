@@ -93,6 +93,11 @@ It gets old fast working on this type of project when you have to wait 2-5 minut
 
 Playwright's internal cache system uses the path of the project that `yarn playwright install` is called from. If that changes, it will download browsers all over again. Combined with a pre-start hook in [.ddev/config.yaml](.ddev/config.yaml), a bind mount lets us copy the `test/playwright` directory into the container at build time, ensuring all the paths line up correctly without having to keep a copy of the files in the final image (and likely confusing mutagen). This is only possible because of DDEV's flexibility in allowing pre-start hooks that run on the host 🙌.
 
+## Prior Art
+
+* [ddev-playwright](https://github.com/julienloizelet/ddev-playwright): I discovered this only after I'd done the bulk of the work here. It runs a ddev service with Playwright using Microsoft's containers. There's an [issue where we have some discussion](https://github.com/julienloizelet/ddev-playwright/issues/3) on the different approaches.
+* [drainpipe](https://github.com/lullabot/drainpipe) and [drainpipe-dev](https://github.com/lullabot/drainpipe-dev): These are Lullabot's standard packages for managing a variety of deployment and testing packages. It has templates for Nightwatch with Selenium containers in DDEV.
+
 ## Not Implemented Yet
 
 1. Support for isolated Drupal databases for parallel tests.
