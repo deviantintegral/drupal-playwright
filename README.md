@@ -68,7 +68,7 @@ ddev playwright test --debug
 
 I originally tried setting this up using Microsoft's official Playwright containers. However, I ran into an issue with Firefox and DDEV:
 
-([BUG] Running Playwright on Firefox inside a Docker container always hangs forever)[https://github.com/microsoft/playwright/issues/16491]
+[[BUG] Running Playwright on Firefox inside a Docker container always hangs forever](https://github.com/microsoft/playwright/issues/16491)
 
 The way to fix this is to run the container as a non-root user. However, to be able to write test reports, the Playwright process has to know what the user and group IDs of the host user are. [DDEV doesn't support this](https://github.com/orgs/ddev/discussions/4733), and it's a somewhat uncommon edge case.
 
