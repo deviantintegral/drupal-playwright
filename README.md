@@ -32,7 +32,7 @@ This repository contains an example setup of browser tests with the following no
 First, bootstrap the Drupal install.
 
 ```console
-git clone ...
+git clone https://github.com/deviantintegral/drupal-playwright.git
 cd drupal-playwright
 ddev start
 ddev composer install
